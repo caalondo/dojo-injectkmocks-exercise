@@ -11,6 +11,6 @@ public class AmazonCloudWatch {
     }
 
     public String putMetricAlarm (String newAlarm) {
-        return newAlarm;
+        return "Running real code!";
     }
 }

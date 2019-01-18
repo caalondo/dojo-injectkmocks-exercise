@@ -12,12 +12,13 @@ public class ExampleUsingAmazonCloudWatch {
     }
 
     // Alternative 2
-    public void setAcw(AmazonCloudWatch acw) {
-        this.acw = acw;
-    }
+//    public void setAcw(AmazonCloudWatch acw) {
+//        this.acw = acw;
+//    }
 
     public void putAlarmCloudWatchService () {
         String response = acw.putMetricAlarm("Alarm 1");
+        System.out.println("RESP: " + response);
     }
 
     public String getMetricsCloudWatchService () {
